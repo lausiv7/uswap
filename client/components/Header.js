@@ -33,7 +33,7 @@ const Header = () => {
       <div className={style.nav}>
         <div className={style.navItemsContainer}>
           <div
-            onClick={() => setSelectedNav('swap2')}
+            onClick={() => setSelectedNav('swap')}
             className={`${style.navItem} ${
               selectedNav === 'swap' && style.activeNavItem
             }`}
