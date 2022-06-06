@@ -35,8 +35,8 @@ const Main = () => {
             placeholder='0.0'
             pattern='^[0-9]*[.,]?[0-9]*$'
             onChange={e => handleChange(e, 'amount')}
-          />
-          <div className={style.currencySelector}>
+          />          
+        <div className={style.currencySelector}>
             <div className={style.currencySelectorContent}>
               <div className={style.currencySelectorIcon}>
                 <Image src={ethLogo} alt='eth logo' height={20} width={20} />
@@ -45,7 +45,8 @@ const Main = () => {
               <AiOutlineDown className={style.currencySelectorArrow} />
             </div>
           </div>
-          <div className={style.transferPropContainer}>
+        </div>
+        <div className={style.transferPropContainer}>
           <input
             type='text'
             className={style.transferPropInput}
@@ -54,7 +55,9 @@ const Main = () => {
           />
           <div className={style.currencySelector}></div>
         </div>
-        </div>  
+        <div onClick={e => handleSubmit(e)} className={style.confirmButton}>
+          Confirm
+        </div> 
         
       </div>      
     </div>
